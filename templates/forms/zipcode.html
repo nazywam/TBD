@@ -1,0 +1,23 @@
+<script>
+    function calculateValue(input){
+        var tmp = input.value.split("-")
+        var a = tmp[0]
+        var b = tmp[1].substring(1)
+
+        document.getElementById("inputZipcode").value = a+b
+    }
+</script>
+
+<div class="container">
+
+	<input type="month" name="bdaymonth" oninput="calculateValue(this)">
+
+	<br>
+
+	<div class="form-group row">
+		<label for="inputAge" class="col-sm-2 col-form-label">Zip code</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="zipcode" id="inputZipcode" disabled="true">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+
+
+<div class="container">
+
+<iframe id="frame" ></iframe>
+<br>
+<br>
+
+<div class="form-group row">
+    <label for="inputAge" class="col-sm-2 col-form-label">IP Address</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputPesel" disabled="true" value="1">
+    </div>
+</div>
+
+</div>
+
+
+<script>
+var iframe = document.getElementById('frame');
+
+iframe.contentDocument.body.innerHTML = 'W<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>';
+
+iframe.contentDocument.addEventListener('scroll', function(event) {
+    console.log(event)
+
+    var theWindow = $('#frame')
+    var theContainer = theWindow.contents().find('body')
+    var tweak = 1000000000000;
+    theContainer.append('E<br>');
+
+    var currentVal = parseFloat(document.getElementById("inputPesel").value, "10") * 1.234567890
+    if(currentVal > 1e13){
+        currentVal = 1
+    }
+    document.getElementById("inputPesel").value = currentVal
+}, false);
+
+</script>
+
+
+
+
+
+
+

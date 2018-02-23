@@ -1,3 +1,6 @@
+# coding=utf-8
+
+
 from flask import Flask
 import flask
 import os
@@ -10,6 +13,19 @@ app = Flask(__name__)
 
 @app.route('/submit', methods=['POST'])
 def check_answers():
+
+    for item in flask.request.form.items():
+        key, value = item
+        print(key)
+
+
+    return """<html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 🦆 Not Found</h1></center>
+<hr><center>nginx/1.10.3</center>
+</body>"""
+
     return json.dumps(flask.request.form)
 
 @app.route('/')
@@ -72,6 +88,12 @@ def hello():
             "html":"preference.html",
             "name":"Color",
             "value": "Cyan"
+        },
+
+        {
+            "html":"email.html",
+            "name":"Email",
+            "value": "caitlin.cruz@example.com"
         }
     ]
     return flask.render_template("index.html", items=items)

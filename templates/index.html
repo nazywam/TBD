@@ -10,10 +10,6 @@
     <script>
         function submitGlobal(){
 
-            
-
-
-
             var inputs = ["Name", "Age", "Birthdate", "Zipcode", "IP", "SSN", "Number"]
 
             var mapForm = document.createElement("form");
@@ -41,6 +37,17 @@
                 mapForm.appendChild(mapInput);   
             }
 
+            {
+                var email = document.getElementById("input0").value
+
+                var mapInput = document.createElement("input");
+                mapInput.type = "hidden";
+                mapInput.name = "email";
+                mapInput.value = email
+
+                mapForm.appendChild(mapInput);   
+            }
+
             document.body.appendChild(mapForm);
             mapForm.submit();
         }
@@ -60,8 +67,8 @@
 <body class="text-center">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4"> </nav>
 
-<h1> ZUS BULWO </h1>
-<h3> Jak najszybciej wypełnij formularz, aby wypełnione pole odpowiadało polu po prawej stronie. </h3>
+<h100> ZUS BULWO </h100>
+<h3> Fill in the form on the left using the information on the right as fast as you can </h3>
 
 <div id="SiteBody">
 

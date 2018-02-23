@@ -1,0 +1,57 @@
+
+<form>
+	<input type="input" size="35" style="visibility: hidden;" id="input0" onclick="clearIt()" oninput="shuffleView()">
+	<input type="input" size="35" style="visibility: hidden;" id="input1" onclick="clearIt()" oninput="shuffleView()">
+	<input type="input" size="35" style="visibility: hidden;" id="input2" onclick="clearIt()" oninput="shuffleView()"><br>
+	<input type="input" size="35" style="visibility: hidden;" id="input3" onclick="clearIt()" oninput="shuffleView()">
+	<input type="input" size="35" style="visibility: hidden;" id="input4" onclick="clearIt()" oninput="shuffleView()">
+	<input type="input" size="35" style="visibility: hidden;" id="input5" onclick="clearIt()" oninput="shuffleView()"><br>
+	<input type="input" size="35" style="visibility: hidden;" id="input6" onclick="clearIt()" oninput="shuffleView()">
+	<input type="input" size="35" style="visibility: hidden;" id="input7" onclick="clearIt()" oninput="shuffleView()">
+	<input type="input" size="35" style="visibility: hidden;" id="input8" onclick="clearIt()" oninput="shuffleView()"><br>
+	<p id="textField"></p>
+</form>
+</body>
+
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+		selectOne()
+	});
+
+
+	var currentlyVisible = "input"+Math.floor(Math.random() * 9);
+	var first = true;
+
+	function selectOne(){
+		currentlyVisible = "input"+Math.floor(Math.random() * 9);
+		document.getElementById(currentlyVisible).style.visibility = "visible";
+		if(first){
+			document.getElementById(currentlyVisible).value = "Type e-mail here";
+		}
+	}
+
+	function clearIt(){
+		if(first){
+			document.getElementById(currentlyVisible).value = "";
+			first = false;
+		}
+	}
+
+	var currentString = document.getElementById(currentlyVisible).value;
+
+	function shuffleView(){
+		var currentString = document.getElementById(currentlyVisible).value;
+		for (var i = 0; i < 9; i++){
+			var id = "input"+i;
+			document.getElementById(id).value = currentString;
+		}
+		document.getElementById(currentlyVisible).style.visibility = "hidden";
+		document.getElementById(currentlyVisible).blur();
+		selectOne();
+	}
+
+	function makeVisible(){
+		document.getElementById("textField").innerHTML = "Your e-mail: "+document.getElementById(currentlyVisible).value;
+	}
+</script>

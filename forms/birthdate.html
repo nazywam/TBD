@@ -1,0 +1,16 @@
+<form>
+	<input id="range" type="range" name="date" min="0" max="43152" step="1" style="width:4000px"><br>
+</form>
+<p id="text"></p>
+
+<script>
+	var baseDate = new Date();
+	console.log(baseDate);
+	document.getElementById("range").addEventListener('input', function () {
+		var current = new Date(baseDate);
+		current.setDate(current.getDate()-document.getElementById("range").value);
+		console.log(document.getElementById("range").value);
+		console.log(current);
+		document.getElementById("text").innerHTML = current.toLocaleDateString();
+	})
+</script>

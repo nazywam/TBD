@@ -1,0 +1,61 @@
+<body onload="disco()">
+<form>
+<input type="input" style="background-color: white; color: black" id="0" disabled="true" value="Asexual">
+<input type="input" style="background-color: white; color: black" id="1" disabled="true" value="Bisexual">
+<input type="input" style="background-color: white; color: black" id="2" disabled="true" value="Heterosexual">
+<input type="input" style="background-color: white; color: black" id="3" disabled="true" value="Homosexual">
+<input type="input" style="background-color: white; color: black" id="4" disabled="true" value="Ambiphilia">
+<input type="input" style="background-color: white; color: black" id="5" disabled="true" value="Androphilia">
+<input type="input" style="background-color: white; color: black" id="6" disabled="true" value="Gynephilia">
+<input type="input" style="background-color: white; color: black" id="7" disabled="true" value="Monosexuality">
+<input type="input" style="background-color: white; color: black" id="8" disabled="true" value="Pansexuality">
+<input type="input" style="background-color: white; color: black" id="9" disabled="true" value="Polysexuality">
+<input type="input" style="background-color: white; color: black" id="10" disabled="true" value="Third gender">
+<input type="input" style="background-color: white; color: black" id="11" disabled="true" value="Two-Spirit">
+<input type="input" style="background-color: white; color: black" id="12" disabled="true" value="Antisexuality">
+<input type="input" style="background-color: white; color: black" id="13" disabled="true" value="Monogamous">
+<input type="input" style="background-color: white; color: black" id="14" disabled="true" value="Polyamorous">
+<input type="input" style="background-color: white; color: black" id="15" disabled="true" value="Attraction to transgender people">
+<input type="input" style="background-color: white; color: black" id="16" disabled="true" value="Banjee">
+<input type="input" style="background-color: white; color: black" id="17" disabled="true" value="Bi-curious">
+<input type="input" style="background-color: white; color: black" id="18" disabled="true" value="Ex-gay">
+<input type="input" style="background-color: white; color: black" id="19" disabled="true" value="Ex-ex-gay">
+<input type="input" style="background-color: white; color: black" id="20" disabled="true" value="Gay">
+<input type="input" style="background-color: white; color: black" id="21" disabled="true" value="Gray asexuality">
+<input type="input" style="background-color: white; color: black" id="22" disabled="true" value="Heteroflexible">
+<input type="input" style="background-color: white; color: black" id="23" disabled="true" value="Lesbian">
+<input type="input" style="background-color: white; color: black" id="24" disabled="true" value="Kinsey scale">
+<input type="input" style="background-color: white; color: black" id="25" disabled="true" value="Non-heterosexual">
+<input type="input" style="background-color: white; color: black" id="26" disabled="true" value="Queer">
+<input type="input" style="background-color: white; color: black" id="27" disabled="true" value="Questioning">
+<input type="input" style="background-color: white; color: black" id="28" disabled="true" value="Romantic orientation">
+<input type="input" style="background-color: white; color: black" id="29" disabled="true" value="Same gender loving">
+<input type="input" style="background-color: white; color: black" id="30" disabled="true" value="Attack Helicopter">
+<br>
+<button type="button" onclick="stopperFun()">Stop</button>
+<button type="button" onclick="startFun()">Again</button>
+</form>
+</body>
+
+<script type="text/javascript">
+	var stopped = false;
+	function stopperFun(){
+		stopped = true;
+	}
+	function startFun(){
+		stopped = false;
+	}
+
+	var lastChanged = 0;
+	function disco(){
+		if(!stopped){
+			document.getElementById(lastChanged).style.backgroundColor = "white";
+			document.getElementById(lastChanged).style.color = "black";
+			lastChanged = Math.floor(Math.random() * 31);
+			document.getElementById(lastChanged).style.backgroundColor = "#eb69f4";
+			document.getElementById(lastChanged).style.color = "white";
+			setTimeout(disco, 10);
+		}
+		else setTimeout(disco, 10);
+	}
+</script>

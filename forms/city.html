@@ -1,0 +1,22 @@
+<form>
+	<input type="text" name="cityInput" id="city" onkeypress="messUp()"></form>
+</form>
+
+<script>
+	var textField = document.getElementById("city");
+	var prevlen = textField.value.length;
+	function messUp() {
+		if(prevlen < textField.value.length){
+			var repeat = Math.floor((Math.random() * 8) + 2);
+			var string = textField.value;
+			console.log(string);
+			var toAdd = "";
+			for (var i = 0; i <= repeat; i++) {
+				toAdd+=string.charAt(string.length-1);
+			}
+			textField.value = string+toAdd;
+			prevlen = textField.value.length;
+		}
+		else prevlen = textField.value.length;
+	};
+</script>

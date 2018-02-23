@@ -1,0 +1,14 @@
+<script>
+    function calculateValue(input){
+        var tmp = input.value.split("-")
+        var a = tmp[0]
+        var b = tmp[1].substring(1)
+
+        console.log(a+b)
+
+        input.setAttribute("realvalue", a+b)
+    }
+</script>
+
+<label for="123">Comment:</label>
+<input id="123" type="week" realvalue="" name="week_year" oninput="">

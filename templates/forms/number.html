@@ -1,0 +1,79 @@
+<body onload="load()">
+<form>
+	<input type="text" name="number" id="0" style="width: 10%">
+	<input type="text" name="number" id="1" style="width: 10%">
+	<input type="text" name="number" id="2" style="width: 10%">
+	<input type="text" name="number" id="3" style="width: 10%">
+	<input type="text" name="number" id="4" style="width: 10%">
+	<input type="text" name="number" id="5" style="width: 10%">
+	<input type="text" name="number" id="6" style="width: 10%">
+	<input type="text" name="number" id="7" style="width: 10%">
+	<input type="text" name="number" id="8" style="width: 10%">
+
+	<br>
+	<button type="button" id="b0" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b1" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b2" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b3" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b4" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b5" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b6" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b7" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<button type="button" id="b8" style="width: 10%" onclick="buttonClick(this.id)">Stop</button>
+	<br><br>
+
+	<button type="button" onclick="showNumber()">Save</button><br>
+
+
+	<br><br>
+	<div class="form-group row">
+	    <label for="inputAge" class="col-sm-2 col-form-label">IP Address</label>
+	    <div class="col-sm-10">
+	        <input type="text" class="form-control" id="inputNumber" disabled="true" value="">
+	    </div>
+	</div>
+
+</form><br>
+<p id="number"></p>
+</body>
+
+<script>
+	var checks = new Array(9);
+	function load() {
+		for (var i = 0; i < 9; i++) {
+			checks[i] = true;
+		}
+		for (var i = 0; i <= 8; i++) {
+			document.getElementById(i).disabled = true;
+		}
+		changeVals();
+	};
+
+	function startRandom(){
+		if(checks.indexOf(true)!=-1){
+			setTimeout(changeVals, 250);
+		}
+	}
+
+	function changeVals(){
+		for(var i = 0; i <= 8; i++){
+			if(checks[i]) document.getElementById(i).value = Math.floor(Math.random() * 9);
+		}
+		startRandom();
+	}
+
+	function buttonClick(id){
+		var x = id.charAt(1);
+		checks[x] = false;
+	}
+
+	function showNumber(){
+		var number = "";
+		for (var i = 0; i < 9; i++){
+			if(i%3==0) number+=" ";
+			number += document.getElementById(i).value;
+		}
+
+		document.getElementById("inputNumber").value = number;
+	}		
+</script>

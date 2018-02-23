@@ -1,0 +1,637 @@
+<script type="text/javascript">
+	function scrape(){
+		var string = "";
+		for (var i = 0; i <= 20; i++) {
+			var current = 'input[name="letter'+i+'"]:checked';
+			var q = document.querySelector(current);
+			if(q) string += q.value;
+		}
+		document.getElementById("inputName").value = string
+	}
+</script>
+
+<div class="container">
+<div class="form-group">
+
+<input type="radio" name="letter0" value="A" onchange="scrape()">A
+<input type="radio" name="letter0" value="B" onchange="scrape()">B
+<input type="radio" name="letter0" value="C" onchange="scrape()">C
+<input type="radio" name="letter0" value="D" onchange="scrape()">D
+<input type="radio" name="letter0" value="E" onchange="scrape()">E
+<input type="radio" name="letter0" value="F" onchange="scrape()">F
+<input type="radio" name="letter0" value="G" onchange="scrape()">G
+<input type="radio" name="letter0" value="H" onchange="scrape()">H
+<input type="radio" name="letter0" value="I" onchange="scrape()">I
+<input type="radio" name="letter0" value="J" onchange="scrape()">J
+<input type="radio" name="letter0" value="K" onchange="scrape()">K
+<input type="radio" name="letter0" value="L" onchange="scrape()">L
+<input type="radio" name="letter0" value="M" onchange="scrape()">M
+<input type="radio" name="letter0" value="N" onchange="scrape()">N
+<input type="radio" name="letter0" value="O" onchange="scrape()">O
+<input type="radio" name="letter0" value="P" onchange="scrape()">P
+<input type="radio" name="letter0" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter0" value="R" onchange="scrape()">R
+<input type="radio" name="letter0" value="S" onchange="scrape()">S
+<input type="radio" name="letter0" value="T" onchange="scrape()">T
+<input type="radio" name="letter0" value="U" onchange="scrape()">U
+<input type="radio" name="letter0" value="V" onchange="scrape()">V
+<input type="radio" name="letter0" value="W" onchange="scrape()">W
+<input type="radio" name="letter0" value="X" onchange="scrape()">X
+<input type="radio" name="letter0" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter0" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter0" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter1" value="A" onchange="scrape()">A
+<input type="radio" name="letter1" value="B" onchange="scrape()">B
+<input type="radio" name="letter1" value="C" onchange="scrape()">C
+<input type="radio" name="letter1" value="D" onchange="scrape()">D
+<input type="radio" name="letter1" value="E" onchange="scrape()">E
+<input type="radio" name="letter1" value="F" onchange="scrape()">F
+<input type="radio" name="letter1" value="G" onchange="scrape()">G
+<input type="radio" name="letter1" value="H" onchange="scrape()">H
+<input type="radio" name="letter1" value="I" onchange="scrape()">I
+<input type="radio" name="letter1" value="J" onchange="scrape()">J
+<input type="radio" name="letter1" value="K" onchange="scrape()">K
+<input type="radio" name="letter1" value="L" onchange="scrape()">L
+<input type="radio" name="letter1" value="M" onchange="scrape()">M
+<input type="radio" name="letter1" value="N" onchange="scrape()">N
+<input type="radio" name="letter1" value="O" onchange="scrape()">O
+<input type="radio" name="letter1" value="P" onchange="scrape()">P
+<input type="radio" name="letter1" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter1" value="R" onchange="scrape()">R
+<input type="radio" name="letter1" value="S" onchange="scrape()">S
+<input type="radio" name="letter1" value="T" onchange="scrape()">T
+<input type="radio" name="letter1" value="U" onchange="scrape()">U
+<input type="radio" name="letter1" value="V" onchange="scrape()">V
+<input type="radio" name="letter1" value="W" onchange="scrape()">W
+<input type="radio" name="letter1" value="X" onchange="scrape()">X
+<input type="radio" name="letter1" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter1" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter1" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter2" value="A" onchange="scrape()">A
+<input type="radio" name="letter2" value="B" onchange="scrape()">B
+<input type="radio" name="letter2" value="C" onchange="scrape()">C
+<input type="radio" name="letter2" value="D" onchange="scrape()">D
+<input type="radio" name="letter2" value="E" onchange="scrape()">E
+<input type="radio" name="letter2" value="F" onchange="scrape()">F
+<input type="radio" name="letter2" value="G" onchange="scrape()">G
+<input type="radio" name="letter2" value="H" onchange="scrape()">H
+<input type="radio" name="letter2" value="I" onchange="scrape()">I
+<input type="radio" name="letter2" value="J" onchange="scrape()">J
+<input type="radio" name="letter2" value="K" onchange="scrape()">K
+<input type="radio" name="letter2" value="L" onchange="scrape()">L
+<input type="radio" name="letter2" value="M" onchange="scrape()">M
+<input type="radio" name="letter2" value="N" onchange="scrape()">N
+<input type="radio" name="letter2" value="O" onchange="scrape()">O
+<input type="radio" name="letter2" value="P" onchange="scrape()">P
+<input type="radio" name="letter2" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter2" value="R" onchange="scrape()">R
+<input type="radio" name="letter2" value="S" onchange="scrape()">S
+<input type="radio" name="letter2" value="T" onchange="scrape()">T
+<input type="radio" name="letter2" value="U" onchange="scrape()">U
+<input type="radio" name="letter2" value="V" onchange="scrape()">V
+<input type="radio" name="letter2" value="W" onchange="scrape()">W
+<input type="radio" name="letter2" value="X" onchange="scrape()">X
+<input type="radio" name="letter2" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter2" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter2" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter3" value="A" onchange="scrape()">A
+<input type="radio" name="letter3" value="B" onchange="scrape()">B
+<input type="radio" name="letter3" value="C" onchange="scrape()">C
+<input type="radio" name="letter3" value="D" onchange="scrape()">D
+<input type="radio" name="letter3" value="E" onchange="scrape()">E
+<input type="radio" name="letter3" value="F" onchange="scrape()">F
+<input type="radio" name="letter3" value="G" onchange="scrape()">G
+<input type="radio" name="letter3" value="H" onchange="scrape()">H
+<input type="radio" name="letter3" value="I" onchange="scrape()">I
+<input type="radio" name="letter3" value="J" onchange="scrape()">J
+<input type="radio" name="letter3" value="K" onchange="scrape()">K
+<input type="radio" name="letter3" value="L" onchange="scrape()">L
+<input type="radio" name="letter3" value="M" onchange="scrape()">M
+<input type="radio" name="letter3" value="N" onchange="scrape()">N
+<input type="radio" name="letter3" value="O" onchange="scrape()">O
+<input type="radio" name="letter3" value="P" onchange="scrape()">P
+<input type="radio" name="letter3" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter3" value="R" onchange="scrape()">R
+<input type="radio" name="letter3" value="S" onchange="scrape()">S
+<input type="radio" name="letter3" value="T" onchange="scrape()">T
+<input type="radio" name="letter3" value="U" onchange="scrape()">U
+<input type="radio" name="letter3" value="V" onchange="scrape()">V
+<input type="radio" name="letter3" value="W" onchange="scrape()">W
+<input type="radio" name="letter3" value="X" onchange="scrape()">X
+<input type="radio" name="letter3" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter3" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter3" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter4" value="A" onchange="scrape()">A
+<input type="radio" name="letter4" value="B" onchange="scrape()">B
+<input type="radio" name="letter4" value="C" onchange="scrape()">C
+<input type="radio" name="letter4" value="D" onchange="scrape()">D
+<input type="radio" name="letter4" value="E" onchange="scrape()">E
+<input type="radio" name="letter4" value="F" onchange="scrape()">F
+<input type="radio" name="letter4" value="G" onchange="scrape()">G
+<input type="radio" name="letter4" value="H" onchange="scrape()">H
+<input type="radio" name="letter4" value="I" onchange="scrape()">I
+<input type="radio" name="letter4" value="J" onchange="scrape()">J
+<input type="radio" name="letter4" value="K" onchange="scrape()">K
+<input type="radio" name="letter4" value="L" onchange="scrape()">L
+<input type="radio" name="letter4" value="M" onchange="scrape()">M
+<input type="radio" name="letter4" value="N" onchange="scrape()">N
+<input type="radio" name="letter4" value="O" onchange="scrape()">O
+<input type="radio" name="letter4" value="P" onchange="scrape()">P
+<input type="radio" name="letter4" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter4" value="R" onchange="scrape()">R
+<input type="radio" name="letter4" value="S" onchange="scrape()">S
+<input type="radio" name="letter4" value="T" onchange="scrape()">T
+<input type="radio" name="letter4" value="U" onchange="scrape()">U
+<input type="radio" name="letter4" value="V" onchange="scrape()">V
+<input type="radio" name="letter4" value="W" onchange="scrape()">W
+<input type="radio" name="letter4" value="X" onchange="scrape()">X
+<input type="radio" name="letter4" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter4" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter4" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter5" value="A" onchange="scrape()">A
+<input type="radio" name="letter5" value="B" onchange="scrape()">B
+<input type="radio" name="letter5" value="C" onchange="scrape()">C
+<input type="radio" name="letter5" value="D" onchange="scrape()">D
+<input type="radio" name="letter5" value="E" onchange="scrape()">E
+<input type="radio" name="letter5" value="F" onchange="scrape()">F
+<input type="radio" name="letter5" value="G" onchange="scrape()">G
+<input type="radio" name="letter5" value="H" onchange="scrape()">H
+<input type="radio" name="letter5" value="I" onchange="scrape()">I
+<input type="radio" name="letter5" value="J" onchange="scrape()">J
+<input type="radio" name="letter5" value="K" onchange="scrape()">K
+<input type="radio" name="letter5" value="L" onchange="scrape()">L
+<input type="radio" name="letter5" value="M" onchange="scrape()">M
+<input type="radio" name="letter5" value="N" onchange="scrape()">N
+<input type="radio" name="letter5" value="O" onchange="scrape()">O
+<input type="radio" name="letter5" value="P" onchange="scrape()">P
+<input type="radio" name="letter5" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter5" value="R" onchange="scrape()">R
+<input type="radio" name="letter5" value="S" onchange="scrape()">S
+<input type="radio" name="letter5" value="T" onchange="scrape()">T
+<input type="radio" name="letter5" value="U" onchange="scrape()">U
+<input type="radio" name="letter5" value="V" onchange="scrape()">V
+<input type="radio" name="letter5" value="W" onchange="scrape()">W
+<input type="radio" name="letter5" value="X" onchange="scrape()">X
+<input type="radio" name="letter5" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter5" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter5" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter6" value="A" onchange="scrape()">A
+<input type="radio" name="letter6" value="B" onchange="scrape()">B
+<input type="radio" name="letter6" value="C" onchange="scrape()">C
+<input type="radio" name="letter6" value="D" onchange="scrape()">D
+<input type="radio" name="letter6" value="E" onchange="scrape()">E
+<input type="radio" name="letter6" value="F" onchange="scrape()">F
+<input type="radio" name="letter6" value="G" onchange="scrape()">G
+<input type="radio" name="letter6" value="H" onchange="scrape()">H
+<input type="radio" name="letter6" value="I" onchange="scrape()">I
+<input type="radio" name="letter6" value="J" onchange="scrape()">J
+<input type="radio" name="letter6" value="K" onchange="scrape()">K
+<input type="radio" name="letter6" value="L" onchange="scrape()">L
+<input type="radio" name="letter6" value="M" onchange="scrape()">M
+<input type="radio" name="letter6" value="N" onchange="scrape()">N
+<input type="radio" name="letter6" value="O" onchange="scrape()">O
+<input type="radio" name="letter6" value="P" onchange="scrape()">P
+<input type="radio" name="letter6" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter6" value="R" onchange="scrape()">R
+<input type="radio" name="letter6" value="S" onchange="scrape()">S
+<input type="radio" name="letter6" value="T" onchange="scrape()">T
+<input type="radio" name="letter6" value="U" onchange="scrape()">U
+<input type="radio" name="letter6" value="V" onchange="scrape()">V
+<input type="radio" name="letter6" value="W" onchange="scrape()">W
+<input type="radio" name="letter6" value="X" onchange="scrape()">X
+<input type="radio" name="letter6" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter6" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter6" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter7" value="A" onchange="scrape()">A
+<input type="radio" name="letter7" value="B" onchange="scrape()">B
+<input type="radio" name="letter7" value="C" onchange="scrape()">C
+<input type="radio" name="letter7" value="D" onchange="scrape()">D
+<input type="radio" name="letter7" value="E" onchange="scrape()">E
+<input type="radio" name="letter7" value="F" onchange="scrape()">F
+<input type="radio" name="letter7" value="G" onchange="scrape()">G
+<input type="radio" name="letter7" value="H" onchange="scrape()">H
+<input type="radio" name="letter7" value="I" onchange="scrape()">I
+<input type="radio" name="letter7" value="J" onchange="scrape()">J
+<input type="radio" name="letter7" value="K" onchange="scrape()">K
+<input type="radio" name="letter7" value="L" onchange="scrape()">L
+<input type="radio" name="letter7" value="M" onchange="scrape()">M
+<input type="radio" name="letter7" value="N" onchange="scrape()">N
+<input type="radio" name="letter7" value="O" onchange="scrape()">O
+<input type="radio" name="letter7" value="P" onchange="scrape()">P
+<input type="radio" name="letter7" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter7" value="R" onchange="scrape()">R
+<input type="radio" name="letter7" value="S" onchange="scrape()">S
+<input type="radio" name="letter7" value="T" onchange="scrape()">T
+<input type="radio" name="letter7" value="U" onchange="scrape()">U
+<input type="radio" name="letter7" value="V" onchange="scrape()">V
+<input type="radio" name="letter7" value="W" onchange="scrape()">W
+<input type="radio" name="letter7" value="X" onchange="scrape()">X
+<input type="radio" name="letter7" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter7" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter7" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter8" value="A" onchange="scrape()">A
+<input type="radio" name="letter8" value="B" onchange="scrape()">B
+<input type="radio" name="letter8" value="C" onchange="scrape()">C
+<input type="radio" name="letter8" value="D" onchange="scrape()">D
+<input type="radio" name="letter8" value="E" onchange="scrape()">E
+<input type="radio" name="letter8" value="F" onchange="scrape()">F
+<input type="radio" name="letter8" value="G" onchange="scrape()">G
+<input type="radio" name="letter8" value="H" onchange="scrape()">H
+<input type="radio" name="letter8" value="I" onchange="scrape()">I
+<input type="radio" name="letter8" value="J" onchange="scrape()">J
+<input type="radio" name="letter8" value="K" onchange="scrape()">K
+<input type="radio" name="letter8" value="L" onchange="scrape()">L
+<input type="radio" name="letter8" value="M" onchange="scrape()">M
+<input type="radio" name="letter8" value="N" onchange="scrape()">N
+<input type="radio" name="letter8" value="O" onchange="scrape()">O
+<input type="radio" name="letter8" value="P" onchange="scrape()">P
+<input type="radio" name="letter8" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter8" value="R" onchange="scrape()">R
+<input type="radio" name="letter8" value="S" onchange="scrape()">S
+<input type="radio" name="letter8" value="T" onchange="scrape()">T
+<input type="radio" name="letter8" value="U" onchange="scrape()">U
+<input type="radio" name="letter8" value="V" onchange="scrape()">V
+<input type="radio" name="letter8" value="W" onchange="scrape()">W
+<input type="radio" name="letter8" value="X" onchange="scrape()">X
+<input type="radio" name="letter8" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter8" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter8" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter9" value="A" onchange="scrape()">A
+<input type="radio" name="letter9" value="B" onchange="scrape()">B
+<input type="radio" name="letter9" value="C" onchange="scrape()">C
+<input type="radio" name="letter9" value="D" onchange="scrape()">D
+<input type="radio" name="letter9" value="E" onchange="scrape()">E
+<input type="radio" name="letter9" value="F" onchange="scrape()">F
+<input type="radio" name="letter9" value="G" onchange="scrape()">G
+<input type="radio" name="letter9" value="H" onchange="scrape()">H
+<input type="radio" name="letter9" value="I" onchange="scrape()">I
+<input type="radio" name="letter9" value="J" onchange="scrape()">J
+<input type="radio" name="letter9" value="K" onchange="scrape()">K
+<input type="radio" name="letter9" value="L" onchange="scrape()">L
+<input type="radio" name="letter9" value="M" onchange="scrape()">M
+<input type="radio" name="letter9" value="N" onchange="scrape()">N
+<input type="radio" name="letter9" value="O" onchange="scrape()">O
+<input type="radio" name="letter9" value="P" onchange="scrape()">P
+<input type="radio" name="letter9" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter9" value="R" onchange="scrape()">R
+<input type="radio" name="letter9" value="S" onchange="scrape()">S
+<input type="radio" name="letter9" value="T" onchange="scrape()">T
+<input type="radio" name="letter9" value="U" onchange="scrape()">U
+<input type="radio" name="letter9" value="V" onchange="scrape()">V
+<input type="radio" name="letter9" value="W" onchange="scrape()">W
+<input type="radio" name="letter9" value="X" onchange="scrape()">X
+<input type="radio" name="letter9" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter9" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter9" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter10" value="A" onchange="scrape()">A
+<input type="radio" name="letter10" value="B" onchange="scrape()">B
+<input type="radio" name="letter10" value="C" onchange="scrape()">C
+<input type="radio" name="letter10" value="D" onchange="scrape()">D
+<input type="radio" name="letter10" value="E" onchange="scrape()">E
+<input type="radio" name="letter10" value="F" onchange="scrape()">F
+<input type="radio" name="letter10" value="G" onchange="scrape()">G
+<input type="radio" name="letter10" value="H" onchange="scrape()">H
+<input type="radio" name="letter10" value="I" onchange="scrape()">I
+<input type="radio" name="letter10" value="J" onchange="scrape()">J
+<input type="radio" name="letter10" value="K" onchange="scrape()">K
+<input type="radio" name="letter10" value="L" onchange="scrape()">L
+<input type="radio" name="letter10" value="M" onchange="scrape()">M
+<input type="radio" name="letter10" value="N" onchange="scrape()">N
+<input type="radio" name="letter10" value="O" onchange="scrape()">O
+<input type="radio" name="letter10" value="P" onchange="scrape()">P
+<input type="radio" name="letter10" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter10" value="R" onchange="scrape()">R
+<input type="radio" name="letter10" value="S" onchange="scrape()">S
+<input type="radio" name="letter10" value="T" onchange="scrape()">T
+<input type="radio" name="letter10" value="U" onchange="scrape()">U
+<input type="radio" name="letter10" value="V" onchange="scrape()">V
+<input type="radio" name="letter10" value="W" onchange="scrape()">W
+<input type="radio" name="letter10" value="X" onchange="scrape()">X
+<input type="radio" name="letter10" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter10" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter10" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter11" value="A" onchange="scrape()">A
+<input type="radio" name="letter11" value="B" onchange="scrape()">B
+<input type="radio" name="letter11" value="C" onchange="scrape()">C
+<input type="radio" name="letter11" value="D" onchange="scrape()">D
+<input type="radio" name="letter11" value="E" onchange="scrape()">E
+<input type="radio" name="letter11" value="F" onchange="scrape()">F
+<input type="radio" name="letter11" value="G" onchange="scrape()">G
+<input type="radio" name="letter11" value="H" onchange="scrape()">H
+<input type="radio" name="letter11" value="I" onchange="scrape()">I
+<input type="radio" name="letter11" value="J" onchange="scrape()">J
+<input type="radio" name="letter11" value="K" onchange="scrape()">K
+<input type="radio" name="letter11" value="L" onchange="scrape()">L
+<input type="radio" name="letter11" value="M" onchange="scrape()">M
+<input type="radio" name="letter11" value="N" onchange="scrape()">N
+<input type="radio" name="letter11" value="O" onchange="scrape()">O
+<input type="radio" name="letter11" value="P" onchange="scrape()">P
+<input type="radio" name="letter11" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter11" value="R" onchange="scrape()">R
+<input type="radio" name="letter11" value="S" onchange="scrape()">S
+<input type="radio" name="letter11" value="T" onchange="scrape()">T
+<input type="radio" name="letter11" value="U" onchange="scrape()">U
+<input type="radio" name="letter11" value="V" onchange="scrape()">V
+<input type="radio" name="letter11" value="W" onchange="scrape()">W
+<input type="radio" name="letter11" value="X" onchange="scrape()">X
+<input type="radio" name="letter11" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter11" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter11" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter12" value="A" onchange="scrape()">A
+<input type="radio" name="letter12" value="B" onchange="scrape()">B
+<input type="radio" name="letter12" value="C" onchange="scrape()">C
+<input type="radio" name="letter12" value="D" onchange="scrape()">D
+<input type="radio" name="letter12" value="E" onchange="scrape()">E
+<input type="radio" name="letter12" value="F" onchange="scrape()">F
+<input type="radio" name="letter12" value="G" onchange="scrape()">G
+<input type="radio" name="letter12" value="H" onchange="scrape()">H
+<input type="radio" name="letter12" value="I" onchange="scrape()">I
+<input type="radio" name="letter12" value="J" onchange="scrape()">J
+<input type="radio" name="letter12" value="K" onchange="scrape()">K
+<input type="radio" name="letter12" value="L" onchange="scrape()">L
+<input type="radio" name="letter12" value="M" onchange="scrape()">M
+<input type="radio" name="letter12" value="N" onchange="scrape()">N
+<input type="radio" name="letter12" value="O" onchange="scrape()">O
+<input type="radio" name="letter12" value="P" onchange="scrape()">P
+<input type="radio" name="letter12" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter12" value="R" onchange="scrape()">R
+<input type="radio" name="letter12" value="S" onchange="scrape()">S
+<input type="radio" name="letter12" value="T" onchange="scrape()">T
+<input type="radio" name="letter12" value="U" onchange="scrape()">U
+<input type="radio" name="letter12" value="V" onchange="scrape()">V
+<input type="radio" name="letter12" value="W" onchange="scrape()">W
+<input type="radio" name="letter12" value="X" onchange="scrape()">X
+<input type="radio" name="letter12" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter12" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter12" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter13" value="A" onchange="scrape()">A
+<input type="radio" name="letter13" value="B" onchange="scrape()">B
+<input type="radio" name="letter13" value="C" onchange="scrape()">C
+<input type="radio" name="letter13" value="D" onchange="scrape()">D
+<input type="radio" name="letter13" value="E" onchange="scrape()">E
+<input type="radio" name="letter13" value="F" onchange="scrape()">F
+<input type="radio" name="letter13" value="G" onchange="scrape()">G
+<input type="radio" name="letter13" value="H" onchange="scrape()">H
+<input type="radio" name="letter13" value="I" onchange="scrape()">I
+<input type="radio" name="letter13" value="J" onchange="scrape()">J
+<input type="radio" name="letter13" value="K" onchange="scrape()">K
+<input type="radio" name="letter13" value="L" onchange="scrape()">L
+<input type="radio" name="letter13" value="M" onchange="scrape()">M
+<input type="radio" name="letter13" value="N" onchange="scrape()">N
+<input type="radio" name="letter13" value="O" onchange="scrape()">O
+<input type="radio" name="letter13" value="P" onchange="scrape()">P
+<input type="radio" name="letter13" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter13" value="R" onchange="scrape()">R
+<input type="radio" name="letter13" value="S" onchange="scrape()">S
+<input type="radio" name="letter13" value="T" onchange="scrape()">T
+<input type="radio" name="letter13" value="U" onchange="scrape()">U
+<input type="radio" name="letter13" value="V" onchange="scrape()">V
+<input type="radio" name="letter13" value="W" onchange="scrape()">W
+<input type="radio" name="letter13" value="X" onchange="scrape()">X
+<input type="radio" name="letter13" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter13" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter13" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter14" value="A" onchange="scrape()">A
+<input type="radio" name="letter14" value="B" onchange="scrape()">B
+<input type="radio" name="letter14" value="C" onchange="scrape()">C
+<input type="radio" name="letter14" value="D" onchange="scrape()">D
+<input type="radio" name="letter14" value="E" onchange="scrape()">E
+<input type="radio" name="letter14" value="F" onchange="scrape()">F
+<input type="radio" name="letter14" value="G" onchange="scrape()">G
+<input type="radio" name="letter14" value="H" onchange="scrape()">H
+<input type="radio" name="letter14" value="I" onchange="scrape()">I
+<input type="radio" name="letter14" value="J" onchange="scrape()">J
+<input type="radio" name="letter14" value="K" onchange="scrape()">K
+<input type="radio" name="letter14" value="L" onchange="scrape()">L
+<input type="radio" name="letter14" value="M" onchange="scrape()">M
+<input type="radio" name="letter14" value="N" onchange="scrape()">N
+<input type="radio" name="letter14" value="O" onchange="scrape()">O
+<input type="radio" name="letter14" value="P" onchange="scrape()">P
+<input type="radio" name="letter14" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter14" value="R" onchange="scrape()">R
+<input type="radio" name="letter14" value="S" onchange="scrape()">S
+<input type="radio" name="letter14" value="T" onchange="scrape()">T
+<input type="radio" name="letter14" value="U" onchange="scrape()">U
+<input type="radio" name="letter14" value="V" onchange="scrape()">V
+<input type="radio" name="letter14" value="W" onchange="scrape()">W
+<input type="radio" name="letter14" value="X" onchange="scrape()">X
+<input type="radio" name="letter14" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter14" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter14" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter15" value="A" onchange="scrape()">A
+<input type="radio" name="letter15" value="B" onchange="scrape()">B
+<input type="radio" name="letter15" value="C" onchange="scrape()">C
+<input type="radio" name="letter15" value="D" onchange="scrape()">D
+<input type="radio" name="letter15" value="E" onchange="scrape()">E
+<input type="radio" name="letter15" value="F" onchange="scrape()">F
+<input type="radio" name="letter15" value="G" onchange="scrape()">G
+<input type="radio" name="letter15" value="H" onchange="scrape()">H
+<input type="radio" name="letter15" value="I" onchange="scrape()">I
+<input type="radio" name="letter15" value="J" onchange="scrape()">J
+<input type="radio" name="letter15" value="K" onchange="scrape()">K
+<input type="radio" name="letter15" value="L" onchange="scrape()">L
+<input type="radio" name="letter15" value="M" onchange="scrape()">M
+<input type="radio" name="letter15" value="N" onchange="scrape()">N
+<input type="radio" name="letter15" value="O" onchange="scrape()">O
+<input type="radio" name="letter15" value="P" onchange="scrape()">P
+<input type="radio" name="letter15" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter15" value="R" onchange="scrape()">R
+<input type="radio" name="letter15" value="S" onchange="scrape()">S
+<input type="radio" name="letter15" value="T" onchange="scrape()">T
+<input type="radio" name="letter15" value="U" onchange="scrape()">U
+<input type="radio" name="letter15" value="V" onchange="scrape()">V
+<input type="radio" name="letter15" value="W" onchange="scrape()">W
+<input type="radio" name="letter15" value="X" onchange="scrape()">X
+<input type="radio" name="letter15" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter15" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter15" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter16" value="A" onchange="scrape()">A
+<input type="radio" name="letter16" value="B" onchange="scrape()">B
+<input type="radio" name="letter16" value="C" onchange="scrape()">C
+<input type="radio" name="letter16" value="D" onchange="scrape()">D
+<input type="radio" name="letter16" value="E" onchange="scrape()">E
+<input type="radio" name="letter16" value="F" onchange="scrape()">F
+<input type="radio" name="letter16" value="G" onchange="scrape()">G
+<input type="radio" name="letter16" value="H" onchange="scrape()">H
+<input type="radio" name="letter16" value="I" onchange="scrape()">I
+<input type="radio" name="letter16" value="J" onchange="scrape()">J
+<input type="radio" name="letter16" value="K" onchange="scrape()">K
+<input type="radio" name="letter16" value="L" onchange="scrape()">L
+<input type="radio" name="letter16" value="M" onchange="scrape()">M
+<input type="radio" name="letter16" value="N" onchange="scrape()">N
+<input type="radio" name="letter16" value="O" onchange="scrape()">O
+<input type="radio" name="letter16" value="P" onchange="scrape()">P
+<input type="radio" name="letter16" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter16" value="R" onchange="scrape()">R
+<input type="radio" name="letter16" value="S" onchange="scrape()">S
+<input type="radio" name="letter16" value="T" onchange="scrape()">T
+<input type="radio" name="letter16" value="U" onchange="scrape()">U
+<input type="radio" name="letter16" value="V" onchange="scrape()">V
+<input type="radio" name="letter16" value="W" onchange="scrape()">W
+<input type="radio" name="letter16" value="X" onchange="scrape()">X
+<input type="radio" name="letter16" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter16" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter16" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter17" value="A" onchange="scrape()">A
+<input type="radio" name="letter17" value="B" onchange="scrape()">B
+<input type="radio" name="letter17" value="C" onchange="scrape()">C
+<input type="radio" name="letter17" value="D" onchange="scrape()">D
+<input type="radio" name="letter17" value="E" onchange="scrape()">E
+<input type="radio" name="letter17" value="F" onchange="scrape()">F
+<input type="radio" name="letter17" value="G" onchange="scrape()">G
+<input type="radio" name="letter17" value="H" onchange="scrape()">H
+<input type="radio" name="letter17" value="I" onchange="scrape()">I
+<input type="radio" name="letter17" value="J" onchange="scrape()">J
+<input type="radio" name="letter17" value="K" onchange="scrape()">K
+<input type="radio" name="letter17" value="L" onchange="scrape()">L
+<input type="radio" name="letter17" value="M" onchange="scrape()">M
+<input type="radio" name="letter17" value="N" onchange="scrape()">N
+<input type="radio" name="letter17" value="O" onchange="scrape()">O
+<input type="radio" name="letter17" value="P" onchange="scrape()">P
+<input type="radio" name="letter17" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter17" value="R" onchange="scrape()">R
+<input type="radio" name="letter17" value="S" onchange="scrape()">S
+<input type="radio" name="letter17" value="T" onchange="scrape()">T
+<input type="radio" name="letter17" value="U" onchange="scrape()">U
+<input type="radio" name="letter17" value="V" onchange="scrape()">V
+<input type="radio" name="letter17" value="W" onchange="scrape()">W
+<input type="radio" name="letter17" value="X" onchange="scrape()">X
+<input type="radio" name="letter17" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter17" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter17" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter18" value="A" onchange="scrape()">A
+<input type="radio" name="letter18" value="B" onchange="scrape()">B
+<input type="radio" name="letter18" value="C" onchange="scrape()">C
+<input type="radio" name="letter18" value="D" onchange="scrape()">D
+<input type="radio" name="letter18" value="E" onchange="scrape()">E
+<input type="radio" name="letter18" value="F" onchange="scrape()">F
+<input type="radio" name="letter18" value="G" onchange="scrape()">G
+<input type="radio" name="letter18" value="H" onchange="scrape()">H
+<input type="radio" name="letter18" value="I" onchange="scrape()">I
+<input type="radio" name="letter18" value="J" onchange="scrape()">J
+<input type="radio" name="letter18" value="K" onchange="scrape()">K
+<input type="radio" name="letter18" value="L" onchange="scrape()">L
+<input type="radio" name="letter18" value="M" onchange="scrape()">M
+<input type="radio" name="letter18" value="N" onchange="scrape()">N
+<input type="radio" name="letter18" value="O" onchange="scrape()">O
+<input type="radio" name="letter18" value="P" onchange="scrape()">P
+<input type="radio" name="letter18" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter18" value="R" onchange="scrape()">R
+<input type="radio" name="letter18" value="S" onchange="scrape()">S
+<input type="radio" name="letter18" value="T" onchange="scrape()">T
+<input type="radio" name="letter18" value="U" onchange="scrape()">U
+<input type="radio" name="letter18" value="V" onchange="scrape()">V
+<input type="radio" name="letter18" value="W" onchange="scrape()">W
+<input type="radio" name="letter18" value="X" onchange="scrape()">X
+<input type="radio" name="letter18" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter18" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter18" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter19" value="A" onchange="scrape()">A
+<input type="radio" name="letter19" value="B" onchange="scrape()">B
+<input type="radio" name="letter19" value="C" onchange="scrape()">C
+<input type="radio" name="letter19" value="D" onchange="scrape()">D
+<input type="radio" name="letter19" value="E" onchange="scrape()">E
+<input type="radio" name="letter19" value="F" onchange="scrape()">F
+<input type="radio" name="letter19" value="G" onchange="scrape()">G
+<input type="radio" name="letter19" value="H" onchange="scrape()">H
+<input type="radio" name="letter19" value="I" onchange="scrape()">I
+<input type="radio" name="letter19" value="J" onchange="scrape()">J
+<input type="radio" name="letter19" value="K" onchange="scrape()">K
+<input type="radio" name="letter19" value="L" onchange="scrape()">L
+<input type="radio" name="letter19" value="M" onchange="scrape()">M
+<input type="radio" name="letter19" value="N" onchange="scrape()">N
+<input type="radio" name="letter19" value="O" onchange="scrape()">O
+<input type="radio" name="letter19" value="P" onchange="scrape()">P
+<input type="radio" name="letter19" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter19" value="R" onchange="scrape()">R
+<input type="radio" name="letter19" value="S" onchange="scrape()">S
+<input type="radio" name="letter19" value="T" onchange="scrape()">T
+<input type="radio" name="letter19" value="U" onchange="scrape()">U
+<input type="radio" name="letter19" value="V" onchange="scrape()">V
+<input type="radio" name="letter19" value="W" onchange="scrape()">W
+<input type="radio" name="letter19" value="X" onchange="scrape()">X
+<input type="radio" name="letter19" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter19" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter19" value=" " onchange="scrape()">(space)
+<br>
+
+<input type="radio" name="letter20" value="A" onchange="scrape()">A
+<input type="radio" name="letter20" value="B" onchange="scrape()">B
+<input type="radio" name="letter20" value="C" onchange="scrape()">C
+<input type="radio" name="letter20" value="D" onchange="scrape()">D
+<input type="radio" name="letter20" value="E" onchange="scrape()">E
+<input type="radio" name="letter20" value="F" onchange="scrape()">F
+<input type="radio" name="letter20" value="G" onchange="scrape()">G
+<input type="radio" name="letter20" value="H" onchange="scrape()">H
+<input type="radio" name="letter20" value="I" onchange="scrape()">I
+<input type="radio" name="letter20" value="J" onchange="scrape()">J
+<input type="radio" name="letter20" value="K" onchange="scrape()">K
+<input type="radio" name="letter20" value="L" onchange="scrape()">L
+<input type="radio" name="letter20" value="M" onchange="scrape()">M
+<input type="radio" name="letter20" value="N" onchange="scrape()">N
+<input type="radio" name="letter20" value="O" onchange="scrape()">O
+<input type="radio" name="letter20" value="P" onchange="scrape()">P
+<input type="radio" name="letter20" value="Q" onchange="scrape()">Q
+<input type="radio" name="letter20" value="R" onchange="scrape()">R
+<input type="radio" name="letter20" value="S" onchange="scrape()">S
+<input type="radio" name="letter20" value="T" onchange="scrape()">T
+<input type="radio" name="letter20" value="U" onchange="scrape()">U
+<input type="radio" name="letter20" value="V" onchange="scrape()">V
+<input type="radio" name="letter20" value="W" onchange="scrape()">W
+<input type="radio" name="letter20" value="X" onchange="scrape()">X
+<input type="radio" name="letter20" value="Y" onchange="scrape()">Y
+<input type="radio" name="letter20" value="Z" onchange="scrape()">Z
+<input type="radio" name="letter20" value=" " onchange="scrape()">(space)
+<br>
+
+</div>
+
+
+<div class="form-group row">
+
+	<label for="inputAge" class="col-sm-2 col-form-label">Name</label>
+	<div class="col-sm-10">
+		<input type="text" class="form-control" id="inputName" disabled="true">
+	</div>
+
+</div>
+
+</div>

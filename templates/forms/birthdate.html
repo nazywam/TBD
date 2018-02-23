@@ -1,0 +1,22 @@
+<div class="form-group row">
+
+	<input id="range" type="range" name="date" min="0" max="43152" step="1" style="width:4000px"><br>
+
+	<label for="inputAge" class="col-sm-2 col-form-label">Birthdate</label>
+	<div class="col-sm-10">
+		<input type="text" class="form-control" id="inputBirthdate" disabled="true">
+	</div>
+
+</div>
+
+
+<script>
+	var baseDate = new Date();
+	console.log(baseDate);
+	document.getElementById("range").addEventListener('input', function () {
+		var current = new Date(baseDate);
+		current.setDate(current.getDate()-document.getElementById("range").value);
+
+		document.getElementById("inputBirthdate").value = current.toLocaleDateString();
+	})
+</script>

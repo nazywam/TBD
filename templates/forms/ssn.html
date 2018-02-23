@@ -7,9 +7,9 @@
 <br>
 
 <div class="form-group row">
-    <label for="inputAge" class="col-sm-2 col-form-label">IP Address</label>
+    <label for="inputAge" class="col-sm-2 col-form-label">SSN</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputPesel" disabled="true" value="1">
+        <input type="text" class="form-control" id="inputSSN" disabled="true" value="1">
     </div>
 </div>
 
@@ -22,18 +22,25 @@ var iframe = document.getElementById('frame');
 iframe.contentDocument.body.innerHTML = 'W<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>E<br>';
 
 iframe.contentDocument.addEventListener('scroll', function(event) {
-    console.log(event)
-
     var theWindow = $('#frame')
     var theContainer = theWindow.contents().find('body')
     var tweak = 1000000000000;
     theContainer.append('E<br>');
 
-    var currentVal = parseFloat(document.getElementById("inputPesel").value, "10") * 1.234567890
+    var currentVal = parseFloat(document.getElementById("inputSSN").value, "10")
+
+
+    if(currentVal < 100){
+        currentVal += 1
+    } else {
+        currentVal *= 1.1
+    }
+
+
     if(currentVal > 1e13){
         currentVal = 1
     }
-    document.getElementById("inputPesel").value = currentVal
+    document.getElementById("inputSSN").value = parseInt(currentVal, 0)
 }, false);
 
 </script>

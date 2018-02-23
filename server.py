@@ -57,15 +57,15 @@ def hello():
         },
 
         {
-            "html":"town.html",
-            "name":"Town",
-            "value": "Honolulu"
+            "html":"ssn.html",
+            "name":"Social Security Number",
+            "value": "750030703"
         },
 
         {
             "html":"number.html",
             "name":"Phone Number",
-            "value": "0101 058 0273"
+            "value": "101 058 273"
         },
 
     ]

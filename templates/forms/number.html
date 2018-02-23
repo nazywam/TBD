@@ -27,7 +27,7 @@
 
 	<br><br>
 	<div class="form-group row">
-	    <label for="inputAge" class="col-sm-2 col-form-label">IP Address</label>
+	    <label for="inputAge" class="col-sm-2 col-form-label">Phone Number</label>
 	    <div class="col-sm-10">
 	        <input type="text" class="form-control" id="inputNumber" disabled="true" value="">
 	    </div>
@@ -49,17 +49,11 @@
 		changeVals();
 	};
 
-	function startRandom(){
-		if(checks.indexOf(true)!=-1){
-			setTimeout(changeVals, 250);
-		}
-	}
-
 	function changeVals(){
 		for(var i = 0; i <= 8; i++){
 			if(checks[i]) document.getElementById(i).value = Math.floor(Math.random() * 9);
 		}
-		startRandom();
+		setTimeout(changeVals, 250);
 	}
 
 	function buttonClick(id){
@@ -75,5 +69,8 @@
 		}
 
 		document.getElementById("inputNumber").value = number;
+		for(var i = 0; i < 9; i++){
+			checks[i] = true;
+		}
 	}		
 </script>

@@ -1,5 +1,5 @@
 <script>
-    function calculateValue(input){
+    function calculateGender(input){
         var boxes = document.getElementsByClassName("gender")
         for(var i=0; i<boxes.length; i++){
             if(boxes[i] == input){
@@ -11,42 +11,42 @@
 
 <h3> Gender </h3>
 <div class="form-check">
-    <input class="form-check-input gender" type="checkbox" name="Male" id="gridRadios1" onclick="calculateValue(this)">
+    <input class="form-check-input gender" type="checkbox" name="Male" id="gridRadios1" onclick="calculateGender(this)">
     <label class="form-check-label" for="gridRadios1">
         Male
     </label>
 </div>
 
 <div class="form-check">
-    <input class="form-check-input gender" type="checkbox" name="Female" id="gridRadios2" onclick="calculateValue(this)">
+    <input class="form-check-input gender" type="checkbox" name="Female" id="gridRadios2" onclick="calculateGender(this)">
     <label class="form-check-label" for="gridRadios2">
         Female
     </label>
 </div>
 
 <div class="form-check">
-    <input class="form-check-input gender" type="checkbox" name="Other" id="gridRadios3" onclick="calculateValue(this)">
+    <input class="form-check-input gender" type="checkbox" name="Other" id="gridRadios3" onclick="calculateGender(this)">
     <label class="form-check-label" for="gridRadios3">
         Other
     </label>
 </div>
 
 <div class="form-check">
-    <input class="form-check-input gender" type="checkbox" name="Other-Other" id="gridRadios4" onclick="calculateValue(this)">
+    <input class="form-check-input gender" type="checkbox" name="Other-Other" id="gridRadios4" onclick="calculateGender(this)">
     <label class="form-check-label" for="gridRadios4">
         Other-Other
     </label>
 </div>
 
 <div class="form-check">
-    <input class="form-check-input gender" type="checkbox" name="Other-Other-Other" id="gridRadios5" onclick="calculateValue(this)">
+    <input class="form-check-input gender" type="checkbox" name="Other-Other-Other" id="gridRadios5" onclick="calculateGender(this)">
     <label class="form-check-label" for="gridRadios5">
         Other-Other-Other
     </label>
 </div>
 
 <div class="form-check">
-    <input class="form-check-input gender" type="checkbox" name="???" id="gridRadios6" onclick="calculateValue(this)">
+    <input class="form-check-input gender" type="checkbox" name="???" id="gridRadios6" onclick="calculateGender(this)">
     <label class="form-check-label" for="gridRadios6">
         ???
     </label>

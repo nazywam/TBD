@@ -5,6 +5,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
+
+
+    <script>
+        function submitGlobal(){
+
+            
+
+
+
+            var inputs = ["Name", "Age", "Birthdate", "Zipcode", "IP", "SSN", "Number"]
+
+            var mapForm = document.createElement("form");
+            mapForm.target = "";    
+            mapForm.method = "POST";
+            mapForm.action = "/submit";
+
+            for(var i=0; i<inputs.length; i++){
+                var mapInput = document.createElement("input");
+                mapInput.type = "hidden";
+                mapInput.name = inputs[i];
+                mapInput.value = document.getElementById("input" + inputs[i]).value
+
+                mapForm.appendChild(mapInput);
+            }
+
+            {
+                var color = document.getElementById("color" + lastChanged).value
+
+                var mapInput = document.createElement("input");
+                mapInput.type = "hidden";
+                mapInput.name = "color";
+                mapInput.value = color
+
+                mapForm.appendChild(mapInput);   
+            }
+
+            document.body.appendChild(mapForm);
+            mapForm.submit();
+        }
+    </script>
 </head>
 
 <style>
@@ -46,7 +86,7 @@
             </div>
         </div>
     {% endfor %}
-    <input type="submit">
+    <input type="submit" onclick="submitGlobal()"> 
 
     </form>
 </div>
@@ -59,7 +99,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <img src="https://pbs.twimg.com/media/DRR_NxtW0AIaW7Y.jpg:large">
 
 </html>

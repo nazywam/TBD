@@ -5,15 +5,13 @@
 <input type="input" style="background-color: white; color: black" id="color3" disabled="true" value="White">
 <input type="input" style="background-color: white; color: black" id="color4" disabled="true" value="Orange">
 <input type="input" style="background-color: white; color: black" id="color5" disabled="true" value="Black">
-<input type="input" style="background-color: white; color: black" id="color6" disabled="true" value="Red">
-<input type="input" style="background-color: white; color: black" id="color7" disabled="true" value="Yellow">
-<input type="input" style="background-color: white; color: black" id="color8" disabled="true" value="Blue">
-<input type="input" style="background-color: white; color: black" id="color9" disabled="true" value="Magenta">
-<input type="input" style="background-color: white; color: black" id="color10" disabled="true" value="Aluminium">
-<input type="input" style="background-color: white; color: black" id="color11" disabled="true" value="Crimson">
-<input type="input" style="background-color: white; color: black" id="color12" disabled="true" value="Cyan">
-<input type="input" style="background-color: white; color: black" id="color13" disabled="true" value="Brown">
-<br>
+<input type="input" style="background-color: white; color: black" id="color6" disabled="true" value="Yellow">
+<input type="input" style="background-color: white; color: black" id="color7" disabled="true" value="Blue">
+<input type="input" style="background-color: white; color: black" id="color8" disabled="true" value="Magenta">
+<input type="input" style="background-color: white; color: black" id="color9" disabled="true" value="Crimson">
+<input type="input" style="background-color: white; color: black" id="color10" disabled="true" value="Cyan">
+<input type="input" style="background-color: white; color: black" id="color11" disabled="true" value="Brown">
+<br><br>
 <button type="button" onclick="stopperFun()">Stop</button>
 <button type="button" onclick="startFun()">Again</button>
 </form>
@@ -36,8 +34,9 @@
 		if(!stopped){
 			document.getElementById("color"+lastChanged).style.backgroundColor = "white";
 			document.getElementById("color"+lastChanged).style.color = "black";
-			lastChanged = Math.floor(Math.random() * 14);
-			document.getElementById("color"+lastChanged).style.backgroundColor = "#eb69f4";
+			lastChanged = Math.floor(Math.random() * 12);
+			// document.getElementById("color"+lastChanged).style.backgroundColor = "#eb69f4";
+			document.getElementById("color"+lastChanged).style.backgroundColor = document.getElementById("color"+lastChanged).value
 			document.getElementById("color"+lastChanged).style.color = "white";
 			setTimeout(disco, 50);
 		}
